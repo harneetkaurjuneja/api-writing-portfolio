@@ -39,7 +39,9 @@ Returns current weather data for a specified city.
 | 500  | Server error — try again later                 |
 
 ### Error Response Example
+```json
 {
   "error": "404",
   "message": "City not found. Check the spelling and try again."
 }
+```
