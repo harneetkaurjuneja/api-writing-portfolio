@@ -22,4 +22,21 @@ Returns current weather data for a specified city.
 
 ### Response
 
-Returns current temperature, humidity, and weather conditions for the specified city.
+### Response Fields
+
+| Field       | Type   | Description                              |
+|-------------|--------|------------------------------------------|
+| city        | string | Name of the requested city               |
+| temperature | string | Current temperature in Celsius           |
+| units       | string | Unit system — metric or imperial         |
+| conditions  | string | Description of current weather           |
+| humidity    | string | Percentage of moisture in the air        |
+
+### Error Codes
+
+| Code | Description                                    |
+|------|------------------------------------------------|
+| 200  | Success — data returned correctly              |
+| 400  | Bad request — check your parameters            |
+| 404  | City not found                                 |
+| 500  | Server error — try again later                 |
