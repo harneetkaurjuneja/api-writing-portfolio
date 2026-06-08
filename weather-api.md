@@ -19,9 +19,6 @@ Returns current weather data for a specified city.
   "units": "metric"
 }
 ```
-
-### Response
-
 ### Response Fields
 
 | Field       | Type   | Description                              |
@@ -38,5 +35,11 @@ Returns current weather data for a specified city.
 |------|------------------------------------------------|
 | 200  | Success — data returned correctly              |
 | 400  | Bad request — check your parameters            |
-| 404  | City not found                                 |
+| 404  | City not found — check spelling and try again  |
 | 500  | Server error — try again later                 |
+
+### Error Response Example
+{
+  "error": "404",
+  "message": "City not found. Check the spelling and try again."
+}
